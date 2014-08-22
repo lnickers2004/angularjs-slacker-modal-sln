@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html ng-app="plunker">
+<head>
+    <meta charset="utf-8" />
+    <title>AngularJS Empty</title>
+    <link data-require="bootstrap-css@3.1.1" data-semver="3.1.1" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <script data-require="angular.js" data-semver="1.2.16" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script data-require="jquery@*" data-semver="2.1.1" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script data-require="bootstrap@3.1.1" data-semver="3.1.1" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+</head>
+<body>
+    <div id="container" ng-controller="MainCtrl">
+
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div class="head">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <div class="col-sm-6 col-md-6">
+                                <h1 class="text-muted">Metro Golf Mobile</h1>
+                            </div>
+                            <div class="col-lg-offset-2 col-sm-4 col-md-4" style="margin-top:15px;">
+                                <button class="btn pull-right btn-default" type="button">Sign In</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar navbar-default">
+                        <div class="container">
+                            <div class="container">
+                                <ul class="nav navbar-nav">
+                                    <li>
+                                        <a href="#">Explore Product</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Search</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Features</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--   END OF ROW 1   -->
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="jumbotron">
+                    <h1 class="text-center">Hello {{name}}</h1>
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12 text-center">
+                            <button class="btn btn-lg btn-success" data-toggle="modal" data-target=".slacker-modal">Launch Slacker Style Modal</button>
+
+                        </div>
+                        <div class="col-sm-6 col-xs-12 text-center">
+                            <button class="btn btn-lg btn-info" data-toggle="modal" data-target=".bootstrap-modal">Launch Normal Bootstrap Modal</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--   END OF ROW 2   -->
+        <div class="row">
+            <div class="col-sm-6 col-xs-12">
+                <p>Content Column 1</p>
+            </div>
+            <div class="col-sm-6  col-xs-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h2>Range Sliders</h2>
+                    </div>
+                    <div class="panel-body">
+                        <h2> <small>Only tested in Chrome!</small></h2>
+                        <hr />
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6">
+                                <div class="range">
+                                    <input type="range" name="range" min="1" max="100" value="50" onchange="range.value=value">
+                                    <output id="range">50</output>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6">
+                                <div class="range range-primary">
+                                    <input type="range" name="range" min="1" max="100" value="50" onchange="rangePrimary.value=value">
+                                    <output id="rangePrimary">50</output>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6">
+                                <div class="range range-success">
+                                    <input type="range" name="range" min="1" max="100" value="50" onchange="rangeSuccess.value=value">
+                                    <output id="rangeSuccess">50</output>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6">
+                                <div class="range range-info">
+                                    <input type="range" name="range" min="1" max="100" value="50" onchange="rangeInfo.value=value">
+                                    <output id="rangeInfo">50</output>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6">
+                                <div class="range range-warning">
+                                    <input type="range" name="range" min="1" max="100" value="50" onchange="rangeWarning.value=value">
+                                    <output id="rangeWarning">50</output>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6">
+                                <div class="range range-danger">
+                                    <input type="range" name="range" min="1" max="100" value="50" onchange="rangeDanger.value=value">
+                                    <output id="rangeDanger">50</output>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div><!-- END OF ROW 2 -->
+            <div class="row">
+                <div class="col-xs-8 col-xs-offset-2  col-sm-8">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            <span class="sr-only">60% Complete</span>
+                        </div>
+                        <span class="progress-type">HTML / HTML5</span>
+                        <span class="progress-completed">60%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                            <span class="sr-only">40% Complete (success)</span>
+                        </div>
+                        <span class="progress-type">ASP.Net</span>
+                        <span class="progress-completed">40%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                            <span class="sr-only">20% Complete (info)</span>
+                        </div>
+                        <span class="progress-type">Java</span>
+                        <span class="progress-completed">20%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                            <span class="sr-only">60% Complete (warning)</span>
+                        </div>
+                        <span class="progress-type">JavaScript / jQuery</span>
+                        <span class="progress-completed">60%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                        <span class="progress-type">CSS / CSS3</span>
+                        <span class="progress-completed">80%</span>
+                    </div>
+                </div>
+            </div>
+            <!-- ENDO OF ROW 3-->
+            <!-- TAB PANEL -->
+            <div class="row">
+                <div class="col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12">
+                    <div class="my-panel-wrapper">
+
+                        <div class="panel panel-primary" style="position:relative;bottom:-200px;">
+
+                            <div class="panel-body" style="height:400px;">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="tab1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</div>
+                                    <div class="tab-pane" id="tab2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                                    <div class="tab-pane" id="tab3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                                    <div class="tab-pane" id="tab4">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+                                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Panel title</h3>
+                                <span class="pull-right">
+                                    <!-- Tabs -->
+                                    <ul class="nav panel-tabs">
+                                        <li class="active"><a href="#tab1" data-toggle="tab">Tab 1</a></li>
+                                        <li><a href="#tab2" data-toggle="tab">Tab 2</a></li>
+                                        <li><a href="#tab3" data-toggle="tab">Tab 3</a></li>
+                                        <li><a href="#tab4" data-toggle="tab">Tab 4</a></li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div><!-- end of container  -->
+        <!--   END OF ROW 3   -->
+        <!-- MODAL DIALOGS -->
+
+        <div class="modal fade bootstrap-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END OF HTML FOR DEMO - NOT NEEDED -->
+        <div class="modal fade in slacker-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="false">
+            <div class="modal-dialog modal-slacker">
+                <div class="modal-content clearfix">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title" id="myLargeModalLabel">Slacker Style Modal</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-md-6 text-center">
+                            <img class="img-circle" alt="140x140" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" style="width: 140px; height: 140px;">
+                            <h2>Heading</h2>
+                            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                            <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <img class="img-circle" alt="140x140" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" style="width: 140px; height: 140px;">
+                            <h2>Heading</h2>
+                            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                            <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div>
+</body>
+</html>
